@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:uitest/helper/pallete.dart';
 import 'package:uitest/helper/style_constants.dart';
-import 'package:uitest/home/post.dart';
+import 'package:uitest/posts/widgets/post.dart';
 
 class PostsWidget extends StatefulWidget {
   const PostsWidget({super.key});
@@ -49,11 +49,13 @@ class _PostsWidgetState extends State<PostsWidget> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          5.verticalSpace,
-          const PostWidget(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            5.verticalSpace,
+            const PostWidget(),
+          ],
+        ),
       ),
     );
   }

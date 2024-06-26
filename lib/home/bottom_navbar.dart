@@ -4,8 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:uitest/helper/assets.dart';
 import 'package:uitest/helper/pallete.dart';
 import 'package:uitest/helper/style_constants.dart';
-import 'package:uitest/home/empty_page.dart';
-import 'package:uitest/home/posts.dart';
+import 'package:uitest/common/empty_page.dart';
+import 'package:uitest/posts/posts.dart';
 
 class CustomBottomNavBar extends StatefulWidget {
   const CustomBottomNavBar({super.key});

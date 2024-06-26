@@ -3,9 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:uitest/helper/assets.dart';
 import 'package:uitest/helper/pallete.dart';
 import 'package:uitest/helper/style_constants.dart';
-import 'package:uitest/home/comments.dart';
-import 'package:uitest/home/voice_message.dart';
-import 'package:uitest/home/reaction_stats.dart';
+import 'package:uitest/posts/widgets/comments.dart';
+import 'package:uitest/posts/widgets/voice_message.dart';
+import 'package:uitest/posts/widgets/reaction_stats.dart';
 
 class PostWidget extends StatefulWidget {
   const PostWidget({super.key});

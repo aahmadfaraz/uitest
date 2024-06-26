@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:uitest/helper/assets.dart';
 import 'package:uitest/helper/pallete.dart';
 import 'package:uitest/helper/style_constants.dart';
-import 'package:uitest/home/reaction_stats.dart';
+import 'package:uitest/posts/widgets/reaction_stats.dart';
 
 class CommentsWidget extends StatefulWidget {
   const CommentsWidget({super.key});
@@ -20,24 +20,22 @@ class _CommentsWidgetState extends State<CommentsWidget> {
       padding: EdgeInsets.symmetric(horizontal: 26.w),
       child: Container(
         color: Pallete.black,
-        child: Expanded(
-          child: Column(
-            children: [
-              const CommentWidget(
-                userName: "kiero_d",
-                name: "kiero_d",
-                img: CustomAssets.img3,
-                comment: "Interesting Nicola that not one reply or tag on this #UX talent shout out in the 24hrs since your tweet here......🤔",
-              ),
-              13.verticalSpace,
-              const CommentWidget(
-                userName: "karenne",
-                name: "karenne",
-                img: CustomAssets.img2,
-                comment: "Maybe I forgot the hashtags. #hiringux #designjobs #sydneyux #sydneydesigners #uxjobs",
-              ),
-            ],
-          ),
+        child: Column(
+          children: [
+            const CommentWidget(
+              userName: "kiero_d",
+              name: "kiero_d",
+              img: CustomAssets.img3,
+              comment: "Interesting Nicola that not one reply or tag on this #UX talent shout out in the 24hrs since your tweet here......🤔",
+            ),
+            13.verticalSpace,
+            const CommentWidget(
+              userName: "karenne",
+              name: "karenne",
+              img: CustomAssets.img2,
+              comment: "Maybe I forgot the hashtags. #hiringux #designjobs #sydneyux #sydneydesigners #uxjobs",
+            ),
+          ],
         ),
       ),
     );
